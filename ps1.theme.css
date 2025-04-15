@@ -1,0 +1,17 @@
+@import url("https://cdn.jsdelivr.net/gh/micah5/PSone.css@main/PSone.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+
+:root {
+  --color1: 79, 130, 197;
+  --color2: 30, 30, 30;
+  --color3: 42, 77, 130;
+  --ColorOpacity: 1;
+  --DisableOpacity: 0;
+  --font: 'Press Start 2P', sans-serif;
+  --OpacityBG: 0.79;
+  --BlurBG: 1.2px;
+}
+
+
+
