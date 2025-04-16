@@ -1,17 +1,141 @@
-@import url("https://cdn.jsdelivr.net/gh/micah5/PSone.css@main/PSone.min.css");
+/**
+ * @name ffvii-inspired
+ * @description A theme inspired by the ps1 FFVII menu style.
+ * @author frinjee
+ * @version 1.0.0
+ * @website https://github.com/frinjee
+ */
+
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
+:root,
+.visual-refresh,
+.visual-refresh.theme-dark {
+    --rgb-background: 20, 20, 20;
+    --background: rgb(var(--rgb-background));
+    --background-primary: var(--background);
+    --background-secondary: var(--background) !important;
+    --background-secondary-alt: var(--background);
+    --background-tertiary: var(--background);
+    --background-accent: var(--background);
+    --background-floating: var(--background);
+    --background-nested-floating: var(--background);
+    --background-modifier-accent: rgba(var(--rgb-highlight), 20%);
+    --background-modifier-hover: rgba(var(--rgb-highlight), 10%);
+    --background-modifier-active: rgba(var(--rgb-highlight), 30%);
+    --background-modifier-selected: var(--rgb-highlight);
+    --background-base-lowest: var(--background);
+    --background-base-low: var(--background);
+    --background-surface-high: var(--background);
+    --modal-background: var(--background);
+    --modal-footer-background: var(--background);
+    --chat-background: var(--background);
+    --input-background: var(--background);
+    --textbox-markdown-syntax: var(--highlight);
+    --profile-gradient-primary-color: var(--background);
+    --profile-gradient-secondary-color: var(--background);
+    --font: 'Press Start 2P', sans-serif;
 
-:root {
-  --color1: 79, 130, 197;
-  --color2: 30, 30, 30;
-  --color3: 42, 77, 130;
-  --ColorOpacity: 1;
-  --DisableOpacity: 0;
-  --font: 'Press Start 2P', sans-serif;
-  --OpacityBG: 0.79;
-  --BlurBG: 1.2px;
+    --read-text: rgb(211, 211, 211);
+    --highlight-text: rgb(0, 255, 0);
+    --unread-text: rgb(150, 150, 150);
+    --highlight-background: rgb(0, 0, 255);
+}
+
+.theme-dark,
+.theme-dark * {
+    font-family: 'Press Start 2P', sans-serif !important;
+    font-size: 8px;
 }
 
 
+div[id^="popout_"],
+.container__2637a,
+.container_c8ffbb,
+.membersWrap-3NUR2t,
+.guilds_c48ade,
+.content_c48ade,
+.inner__74017,
+.container__91a9d,
+.container__9293f,
+.container__4a84a,
+.chatContent_f75fb0,
+.chat_f75fb0,
+.title_f75fb0,
+.searchBar__97492,
+.bar_c38106,
+.members_c8ffbb,
+.nowPlayingColumn__133bf,
+.footer__214dc,
+.container_f369db,
+.contentRegion__23e6b,
+.container__37e49,
+.scrollableContainer__74017,
+.panels_c48ade,
+.sidebar_c48ade::after,
+.scroller__99e7c,
+.privateChannels__35e86,
+.panel__5dec7,
+.circleIconButton__5bc7e,
+.divider__5126c,
+.content__908e2,
+.contents_c19a55,
+.container_b7e1cb,
+.menu_c1e9c4, .flexible_c1e9c4, .menu__77820 {
+    background: linear-gradient(135deg, #003366, #000066) !important;
+    border: 2px solid #a0a0a0 !important;
+    border-radius: 0 !important;
+    box-shadow:
+        inset 0 1px 2px rgba(255, 255, 255, 0.3),
+        0 0 6px rgba(0, 0, 0, 0.8) !important;
+    color: #ffffff !important;
+    padding: 8px;
+}
 
+img[alt="App Icon"] {
+  display: none !important;
+}
+
+.childWrapper__6e9f8::before {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-image: url("https://i.imgur.com/zml8BXl.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0 !important;
+    box-shadow:
+        inset 0 1px 2px rgba(255, 255, 255, 0.3),
+        0 0 6px rgba(0, 0, 0, 0.8) !important;
+    color: #ffffff !important;
+    padding: 8px;
+}
+
+div[id^="imageContainer__"] {
+    box-shadow:
+        inset 0 1px 2px rgba(255, 255, 255, 0.3),
+        0 0 12px rgba(100, 100, 255, 0.6) !important;
+    transition: box-shadow 0.3s ease;
+}
+
+div[id^="popout_"]:hover {
+    box-shadow:
+        inset 0 1px 2px rgba(255, 255, 255, 0.3),
+        0 0 12px rgba(100, 100, 255, 0.6) !important;
+    transition: box-shadow 0.3s ease;
+}
+
+.membersWrap-3NUR2t {
+    border-left: 2px solid #a0a0a0 !important;
+    font-family: 'Press Start 2P', sans-serif !important;
+}
+
+.members_c8ffbb#after {
+    background: rgba(100, 100, 255, 0.3) !important;
+}
+
+* {
+    cursor: url("https://i.imgur.com/ppha1o0.png"), auto !important;
+}
